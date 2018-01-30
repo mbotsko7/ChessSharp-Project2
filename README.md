@@ -4,4 +4,4 @@ Continuing the development of a Chess application in C#, the original terminal C
 <br>
 Project 1: https://github.com/mbotsko7/ChessSharp-Project1
 <br>
-Project 3: https://github.com/mbotsko7/ChessSharp-Project3
+Project 3: https://github.com/mbotsko7/ChessSharpProject3

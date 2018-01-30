@@ -1,0 +1,28 @@
+﻿<Window x:Class="Cecs475.BoardGames.Chess.View.Promotion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cecs475.BoardGames.Chess.View"
+        
+        mc:Ignorable="d"
+        WindowStyle="None" Height="158.049" Width="164.634" ResizeMode="NoResize"
+        >
+    <Window.Resources>
+        <Image x:Key="knight" Source="C:\Users\Michael\Documents\CSULB\CECS\475\project2-mbotsko7\src\Cecs475.BoardGames.Chess.View\resources\knight_b.png"/>
+        <Image x:Key="bishop" Source="C:\Users\Michael\Documents\CSULB\CECS\475\project2-mbotsko7\src\Cecs475.BoardGames.Chess.View\resources\bishop_b.png"/>
+        <Image x:Key="rook" Source="C:\Users\Michael\Documents\CSULB\CECS\475\project2-mbotsko7\src\Cecs475.BoardGames.Chess.View\resources\rook_b.png"/>
+        <Image x:Key="queen" Source="C:\Users\Michael\Documents\CSULB\CECS\475\project2-mbotsko7\src\Cecs475.BoardGames.Chess.View\resources\queen_b.png"/>
+        
+        <local:ChessImageConverter x:Key="ChessPieces"/>
+    </Window.Resources>
+    <StackPanel Orientation="Vertical">
+
+        <Label>Choose a piece to promote:</Label>
+        <Button Tag="k" Click="Button_Click"  Content="{StaticResource knight}" Height="27"/>
+        <Button Tag="b" Click="Button_Click"  Content ="{StaticResource bishop}" Height="34"/>
+        <Button Tag="r" Click="Button_Click"  Content ="{StaticResource rook}" Height="32"/>
+        <Button Tag="q" Click="Button_Click"  Content ="{StaticResource queen}" Height="39"/>
+    </StackPanel>
+
+</Window>
